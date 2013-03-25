@@ -14,5 +14,4 @@ If we set an items' "Created date" time, and it's reached, then it
 </ul>
 <p>The categories to work from can be set up using the plugin parameters.</p>
 
-Based on Joomla 1.5 plugin found on keepjoomla.com.
-I've changed "Finish publishing" to "Creation date" to suit my needs.
+<p>Based on Joomla 1.5 plugin found on keepjoomla.com.<br />I've changed "Finish publishing" to "Creation date" to suit my needs.</p>
