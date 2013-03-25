@@ -8,7 +8,7 @@
 	<authorEmail>info@spletodrom.com</authorEmail>
 	<authorUrl>http://www.spletodrom.com</authorUrl>
 	<version>1.0</version>
-	<description>K2 Auto Archiver</description>
+	<description>K2AUTOARCHIVER_DESC</description>
 	<files>
 		<filename plugin="k2autoarchiver">k2autoarchiver.php</filename>
 	</files>
