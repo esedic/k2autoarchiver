@@ -1,19 +1,17 @@
 k2autoarchiver
 ==============
 
-Plugin for manipulating state of the K2 items based on set of rules:
+Plugin for manipulating state of the K2 items based on set of rules.
 
-<ol><li>Choose an option:<ul>
-<li>move to archive category</li>
-<li>move to trash</li>
-<li>delete permanently</li>
-<li>just unpublish</li>
-</ul></li>
+<p>The K2autoarchiver plugin's been created for the Joomla <a href="http://getk2.org/" target="_blank">K2 component</a>.<br/>It was tested on Joomla 2.5.9 and K2 2.6.5.</p>
+<p>Usage:</p>
+If we set an items' 'Created date' time, and it's reached, then it 
+<ul>
+<li>Moves the item in a given category</li>
+<li>Moves it into trash</li>
+<li>Deletes it permanently</li>
+<li>Unpublishes it</li>
+</ul>
+<p>The categories to work from can be set up using the plugin parameters.</p>
 
-
-<li>Set ID of the archive category</li>
-<li>Set ID of category to work from  (or multiple IDs comma separated)</li>
-<li>Publish plugin</li>
-</ol>
-
-Based on J1.5 plugin found on keepjoomla.com.
+Based on Joomla 1.5 plugin found on keepjoomla.com.
