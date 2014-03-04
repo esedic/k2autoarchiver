@@ -29,7 +29,7 @@ class plgContentK2autoarchiver extends JPlugin {
 		}
 		
 		$app = JFactory::getApplication();
-		$db = JFactory::getDBO();		
+		$db = JFactory::getDbo();		
 		
 		$whereA = array();
 
