@@ -2,7 +2,7 @@
 
 /**
 * K2 Auto Archiver plugin
-* @version 1.0
+* @version 2.0
 * @author Elvis Sedic
 * @copyright (C) Elvis Sedic, www.spletodrom.com
 * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2
