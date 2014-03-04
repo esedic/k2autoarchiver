@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="content" method="upgrade">
+<extension version="3.1" type="plugin" group="content">
 	<name>Content - K2 Autoarchiver</name>
 	<author>Elvis Sedic</author>
 	<creationDate>March 2012</creationDate>
@@ -7,14 +7,14 @@
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@spletodrom.com</authorEmail>
 	<authorUrl>http://www.spletodrom.com</authorUrl>
-	<version>1.0</version>
+	<version>2.0</version>
 	<description>K2AUTOARCHIVER_DESC</description>
 	<files>
 		<filename plugin="k2autoarchiver">k2autoarchiver.php</filename>
 	</files>
-    <languages folder="language">
+	<languages folder="language">
             <language tag="en-GB">en-GB.plg_content_k2autoarchiver.ini</language>
-    </languages>
+	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
