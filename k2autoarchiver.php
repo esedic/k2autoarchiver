@@ -34,7 +34,8 @@ class plgContentK2autoarchiver extends JPlugin {
 		$whereA = array();
 
 		$plugin = JPluginHelper::getPlugin( 'content', 'k2autoarchiver' );
-		$pluginparams = new JParameter( $plugin->params );
+		$pluginparams = new JRegistry();
+		$pluginparams->loadString($plugin->params);
 		
 		$action = $pluginparams->def('action');
 		$sourcecat = trim($pluginparams->def('sourcecat'));
