@@ -29,12 +29,14 @@ class plgContentK2autoarchiver extends JPlugin {
 		}
 		
 		$app = JFactory::getApplication();
-		$db = JFactory::getDBO();		
+		$db = JFactory::getDbo();		
 		
 		$whereA = array();
 
 		$plugin = JPluginHelper::getPlugin( 'content', 'k2autoarchiver' );
-		$pluginparams = new JParameter( $plugin->params );
+		
+		$pluginparams = new JRegistry();
+		$pluginparams->loadString($plugin->params);
 		
 		$action = $pluginparams->def('action');
 		$sourcecat = trim($pluginparams->def('sourcecat'));
@@ -74,7 +76,7 @@ class plgContentK2autoarchiver extends JPlugin {
 		}
 
 		$where = implode(' AND ', $whereA);				
-		$query .= ' WHERE (a.created > "0000-00-00 00:00:00") AND (a.created < NOW()) AND
+		$query .= ' WHERE (a.archive_date > "0000-00-00 00:00:00") AND (a.archive_date < NOW()) AND
 						' . $where;
 
 		$db->setQuery($query);

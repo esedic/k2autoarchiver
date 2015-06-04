@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5" type="plugin" group="content" method="upgrade">
+<extension version="3.2" type="plugin" group="content">
 	<name>Content - K2 Autoarchiver</name>
 	<author>Elvis Sedic</author>
 	<creationDate>March 2012</creationDate>
@@ -12,24 +12,38 @@
 	<files>
 		<filename plugin="k2autoarchiver">k2autoarchiver.php</filename>
 	</files>
-    <languages folder="language">
+    <languages>
             <language tag="en-GB">en-GB.plg_content_k2autoarchiver.ini</language>
+            <language tag="en-GB">en-GB.plg_content_k2autoarchiver.sys.ini</language>
     </languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 
-				<field name="action" type="list" default="trash" label="ACTION" description="">
+				<field name="action" type="list" 
+						default="trash" 
+						label="ACTION" 
+						description="K2AUTOARCHIVER_DESC"
+					>
 					<option value="archive">MOVE TO ARCHIVE CATEGORY</option>
 					<option value="trash">MOVE TO TRASH</option>
 					<option value="delete">DELETE PERMANENTLY</option>
 					<option value="unpublish">JUST UNPUBLISH</option>
 				</field>
 
-				<field name="defaultcat" type="text" size="30" default="" label="ID OF THE ARCHIVE CATEGORY" description="ARCHIVE CATEGORY DESC" />
+				<field name="defaultcat" type="text" 
+						default="" 
+						description="ARCHIVE CATEGORY DESC" 
+						label="ID OF THE ARCHIVE CATEGORY" 
+						size="30" 
+				/>
 				
-				<field name="sourcecat" type="text" size="30" default="" label="WHICH CATEGORY TO WORK FROM" description="WHICH CATEGORY TO WORK FROM DESC" />
-
+				<field name="sourcecat" type="text" 
+						default="" 
+						label="WHICH CATEGORY TO WORK FROM" 
+						description="WHICH CATEGORY TO WORK FROM DESC" 
+						size="30" 
+				/>
 			</fieldset>
 		</fields>
 	</config>
